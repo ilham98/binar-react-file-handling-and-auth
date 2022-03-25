@@ -1,8 +1,10 @@
 import BasicContainer from "../components/BasicContainer";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   const [todos, setTodos] = useState([]);
 
   const fetchData = async () => {

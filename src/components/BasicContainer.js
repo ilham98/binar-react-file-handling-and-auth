@@ -1,12 +1,15 @@
 import Navbar from "./Navbar";
+import { Container } from "reactstrap";
 
 function BasicContainer(props) {
   return (
-    <div>
+    <>
       <Navbar />
-      <div>{props.children}</div>
+      <Container>
+        <div>{props.children}</div>
+      </Container>
       <div>Footer</div>
-    </div>
+    </>
   );
 }
 
